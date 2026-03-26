@@ -276,10 +276,10 @@ graph TD
     ANY --> ARR["T extends readonly any[]<br/>T 必须是数组或元组"]
     ANY --> KEY["T extends keyof U<br/>T 必须是 U 的键"]
 
-    STR --> STR_LIT["&quot;hello&quot; / &quot;world&quot;"]
+    STR --> STR_LIT["'hello' / 'world'"]
     HAS_LEN --> LEN_EX["string / any[] / { length: 10 }"]
-    ARR --> ARR_EX["number[] / [1, 2] / readonly [&quot;a&quot;]"]
-    KEY --> KEY_EX["&quot;name&quot; / &quot;age&quot; / &quot;email&quot;"]
+    ARR --> ARR_EX["number[] / [1, 2] / readonly ['a']"]
+    KEY --> KEY_EX["'name' / 'age' / 'email'"]
 
     style ANY fill:#ffcdd2,stroke:#c62828,stroke-width:2px
     style STR fill:#e3f2fd,stroke:#1565c0
